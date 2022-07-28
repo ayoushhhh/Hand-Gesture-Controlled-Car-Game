@@ -15,7 +15,6 @@ class CarRacing:
     def __init__(self):
 
         pygame.init()
-        #pygame.camera.init()
         self.display_width = 800
         self.display_height = 600
         self.black = (0, 0, 0)
@@ -66,7 +65,6 @@ class CarRacing:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.crashed = True
-                # print(event)
 
                 if (event.type == pygame.KEYDOWN):
                     if (event.key == pygame.K_LEFT):
