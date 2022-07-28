@@ -36,13 +36,6 @@ def get_label(index, hand, results):
             score = classification.classification[0].score
             text = '{} {}'.format(label, round(score, 2))
 
-    # # Extract Coordinates
-    # coords = tuple(np.multiply(
-    #     np.array((hand.landmark[mp_hands.HandLandmark.WRIST].x, hand.landmark[mp_hands.HandLandmark.WRIST].y)),
-    #     [640, 480]).astype(int))
-    # output = text, coords
-    # return output
-
 # Visualizing the hand pose Estimation
 cap = cv2.VideoCapture(0)
 
